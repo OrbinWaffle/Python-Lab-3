@@ -49,12 +49,12 @@ def drawSpiralSquare(xPos, yPos, size, clockwise):
       squareSize = size * ((i-1) / iterations) ** 3
 
 colors = ["white", "black"]
-drawSpiralSquare(200, 200, 400, False)
+drawSpiralSquare(200, 200, 400, True)
 colors = ["black", "white"]
-drawSpiralSquare(-200, 200, 400, True)
+drawSpiralSquare(-200, 200, 400, False)
 colors = ["white", "black"]
-drawSpiralSquare(-200, -200, 400, False)
+drawSpiralSquare(-200, -200, 400, True)
 colors = ["black", "white"]
-drawSpiralSquare(200, -200, 400, True)
+drawSpiralSquare(200, -200, 400, False)
 
 done()
