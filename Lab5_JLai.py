@@ -9,13 +9,14 @@ import math
 turtle.speed("fastest")
 turtle.Screen().bgcolor("black")
 
+# Draws a square centered around (xPos, yPos) of size "size" and rotated "degrees" degrees
 def drawSquare(xPos, yPos, size, degrees):
    rads = math.radians(degrees)
    # Get the bottom left corner coordinate
    cornerX = -(size)/2 + xPos
    cornerY = -(size)/2 + yPos
-   # Rotate the corner coordinate about the center of the square.
-   # First translate the sqaure to the origin, then use trigonometry to rotate it, then move it back.
+   # Rotate the corner coordinate about the center of the square
+   # First translate the sqaure to the origin, then use trigonometry to rotate it, then move it back
    x = math.cos(rads) * (cornerX - xPos) - math.sin(rads) * (cornerY - yPos) + xPos
    y = math.sin(rads) * (cornerX - xPos) + math.cos(rads) * (cornerY - yPos) + yPos
    begin_fill()
@@ -29,6 +30,8 @@ def drawSquare(xPos, yPos, size, degrees):
       left(90)
    end_fill()
 
+# Draws a square with a spiraling pattern inside, centered at (xPos, yPos) of size "size".
+# "Clockwise" determines if the spiral rotates clockwise or counter-clockwise
 def drawSpiralSquare(xPos, yPos, size, clockwise):
    turtle.pensize(1)
    squareSize = size
