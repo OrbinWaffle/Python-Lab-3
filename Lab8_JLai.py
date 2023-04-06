@@ -31,6 +31,7 @@ def TaskOne():
     print(line_list[1].rstrip("\n"))
     print(line_list[3].rstrip("\n"))
 
+    # TASK ONE OUTPUT:
     # Which task would you like to run? Type 1, 2, or 3: 1
     # We canâ€™t touch
     # We hunker down
@@ -39,7 +40,6 @@ def TaskOne():
     # But we still rise up
 
 # Task Two
-
 
 def TaskTwo():
     # write strings one by one, i.e. write(str)
@@ -98,6 +98,7 @@ def TaskThree():
         float_list.append(float_val)
     print(float_list)
             
+    # TASK THREE OUTPUT:
     # Which task would you like to run? Type 1, 2, or 3: 3
     # Is the file in the current directory? y/n, or q to quit: y
     # Please input the file name: numbers.txt
