@@ -2,8 +2,6 @@
 # Lab 8
 # Completed 4/6/2022
 
-import string
-import random
 import os
 
 # Task One
