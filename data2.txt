@@ -1,0 +1,6 @@
+BILL:	Hello, how are you?
+BOB:	I'm good.
+BILL:	That's good.
+BOB:	Thank you.
+BILL:	Bye.
+BOB:	So long.
