@@ -99,11 +99,11 @@ def TaskThree():
             float_val = 0.0
         float_list.append(float_val)
     print(float_list)
-        
+            
     # Which task would you like to run? Type 1, 2, or 3: 3
     # Is the file in the current directory? y/n, or q to quit: y
     # Please input the file name: numbers.txt
-    # [102.0, 99999.0, 20.5, 90.0, 0.0, 0.0, 2370.3887, 0.0, 0.1, 0.0, 30.2, 0.0, 0.2384234]
+    # [102.0, 99999.0, 20.5, 90.0, 0.0, 7.0, 0.0, 2370.3887, 0.0, 0.1, 0.0, 30.2, 0.0, 0.2384234, 12345.0, 0.0, 27.3, 0.0, 0.0, 0.0, 0.0, 238.32, 10.1, 128.0, 99.9999]
 
 # Task selector
 if __name__ == "__main__":
