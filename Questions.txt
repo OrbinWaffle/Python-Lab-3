@@ -1,4 +1,4 @@
-QUESTION
+QUESTION 1
 What is the output of the following code snippet?
 my_list = [1, 2, 3, 4, 5]
 print(my_list[-2])
@@ -7,19 +7,21 @@ OPTIONS
 4
 5
 2
-ANSWER: B
+ANSWER
+B
 
-QUESTION
+QUESTION 2
 Which of the following is not a built-in data type in Python?
-OPTIONS:
+OPTIONS
 list
 tuple
 dictionary
 array
 set
-ANSWER: D
+ANSWER
+D
 
-QUESTION
+QUESTION 3
 What is the output of the following code snippet?
 my_dict = {'a': 1, 'b': 2, 'c': 3}
 print(my_dict.pop('b'))
@@ -28,9 +30,10 @@ OPTIONS
 3
 {'a': 1, 'c': 3}
 {'b': 2, 'c': 3}
-ANSWER: A
+ANSWER
+A
 
-QUESTION
+QUESTION 4
 What does the "split()" method do?
 OPTIONS
 Returns a copy of the string with all occurrences of a substring replaced with another substring
@@ -40,7 +43,7 @@ Removes leading and trailing whitespace from a string
 ANSWER
 B
 
-QUESTION
+QUESTION 5
 What is the output of the following code snippet?
 my_list = [1, 2, 3, 4, 5]
 print(my_list[1:4])
@@ -52,7 +55,7 @@ OPTIONS
 ANSWER
 A
 
-QUESTION
+QUESTION 6
 Python is a strongly typed language.
 OPTIONS
 True
@@ -60,7 +63,7 @@ False
 ANSWER
 B
 
-QUESTION
+QUESTION 7
 A tuple is an immutable sequence of elements in Python.
 OPTIONS
 True
@@ -68,7 +71,7 @@ False
 ANSWER
 A
 
-QUESTION
+QUESTION 8
 The "range" function returns a list of integers.
 OPTIONS
 True
@@ -76,7 +79,7 @@ False
 ANSWER
 B
 
-QUESTION
+QUESTION 9
 Python has a built-in garbage collector that automatically frees memory for objects that are no longer being used.
 OPTIONS
 True
@@ -84,10 +87,118 @@ False
 ANSWER
 A
 
-QUESTION
+QUESTION 10
 A variable declared inside a function in Python is accessible outside the function.
 OPTIONS
 True
 False
 ANSWER
 B
+
+QUESTION 11
+What is the output of the following code snippet?
+my_string = "Hello, World!"
+print(my_string[7:12])
+OPTIONS
+World
+, Wor
+Worl
+orl
+ANSWER
+A
+
+QUESTION 12
+Which of the following is a valid way to define a list containing the values 1, 2, and 3?
+OPTIONS
+[1 2 3]
+(1, 2, 3)
+{1, 2, 3}
+[1, 2, 3]
+ANSWER
+D
+
+QUESTION 13
+What is the difference between a list and a tuple in Python?
+OPTIONS
+A list is immutable while a tuple is mutable
+A tuple is ordered while a list is unordered
+A list can contain only integers while a tuple can contain any data type
+A tuple can be indexed while a list cannot be indexed
+ANSWER
+B
+
+QUESTION 14
+What is the output of the following code snippet?
+my_dict = {'a': 1, 'b': 2, 'c': 3}
+print('d' in my_dict)
+OPTIONS
+True
+False
+ANSWER
+B
+
+QUESTION 15
+What is the purpose of the "append" method for lists in Python?
+OPTIONS
+To remove the last element from a list
+To add a new element to the end of a list
+To sort the elements of a list in ascending order
+To check whether a given element is present in a list
+ANSWER
+B
+
+QUESTION 16
+Which of the following is not a valid way to declare a variable in Python?
+OPTIONS
+my_variable = 5
+5 = my_variable
+my_variable_2 = "hello"
+_my_variable = True
+ANSWER
+B
+
+QUESTION 17
+What is the output of the following code snippet?
+my_tuple = ('apple', 'banana', 'cherry')
+print(len(my_tuple))
+OPTIONS
+3
+6
+'applebanana'
+'cherry'
+ANSWER
+A
+
+QUESTION 18
+Which of the following is not a valid way to create a dictionary in Python?
+OPTIONS
+{'a': 1, 'b': 2, 'c': 3}
+dict(a=1, b=2, c=3)
+dict([('a', 1), ('b', 2), ('c', 3)])
+{1: 'a', 2: 'b', 3: 'c'}
+ANSWER
+D
+
+QUESTION 19
+What is the output of the following code snippet?
+my_string = "hello world"
+print(my_string.upper())
+OPTIONS
+HELLO
+hello world
+HELLO WORLD
+hello World
+ANSWER
+C
+
+QUESTION 20
+Which of the following is not a valid way to access a value in a dictionary in Python?
+OPTIONS
+my_dict['key']
+my_dict.get('key')
+my_dict.key
+my_dict.getkey()
+ANSWER
+D
+
+END
