@@ -35,9 +35,48 @@ class MountainBike(Bicycle):
         return super().to_string() + ("\nseat height is " + str(self.seat_height))
 
 class Fraction:
-    pass
+    num : float
+    den : float
+
+    def __init__(self, new_num : float, new_den : float) -> None:
+        self.num = new_num
+        self.den = new_den
+
+    def __add__(self, other):
+        return Fraction(self.num * other.den + self.den * other.num, self.den * other.den)
+    def __mul__(self, other):
+        return Fraction(self.num * other.num, self.den * other.den)
+    def __eq__(self, other):
+        return (self.num * other.den == self.den * other.num)
+    
+    def __str__(self):
+        return str(self.num) +  "/" + str(self.den)
+
+
+def main_one():
+    mb = MountainBike(3, 100, 25)
+    print(mb.to_string())
+
+def main_two():
+    f1 = Fraction (3, 7)
+    f2 = Fraction (2, 5)
+    f3 = Fraction (1, 3)
+    f4 = Fraction (2, 6)
+    result = f1 + f2 * f3
+    print(result)
+    if (f1 == f3):
+        print("f1 and f3 are the same")
+    else:
+        print("f1 and f3 not equal")
+    if (f3 == f4):
+        print("f3 and f4 are the same")
+    else:
+        print("f3 and f4 not equal")
 
 
 if __name__ == "__main__":
-    mb = MountainBike(3, 100, 25)
-    print(mb.to_string())
+    selection = int(input("Which task would you like to run? Type 1 or 2: "))
+    if (selection == 1):
+        main_one()
+    elif (selection == 2):
+        main_two()
